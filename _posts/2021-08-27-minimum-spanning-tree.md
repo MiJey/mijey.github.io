@@ -171,10 +171,10 @@ MST를 찾는 알고리듬을 이해하는데는 MST의 **컷 프로퍼티(cut p
 
 [백준 1197번: 최소 스패닝 트리](https://www.acmicpc.net/problem/1197)를 크러스컬과 프림으로 구현한 코드입니다. 문제는 MST의 가중치의 합을 구하는 문제라 MST의 모든 간선을 리스트에 추가하는 코드는 주석으로 남겨놓았습니다.
 
-<script src="[https://gist.github.com/MiJey/b524564db3963fba9e38d1c8705bca00.js](https://gist.github.com/MiJey/b524564db3963fba9e38d1c8705bca00.js)">
+<script src="https://gist.github.com/MiJey/b524564db3963fba9e38d1c8705bca00.js">
 
 </script>
 
-<script src="[https://gist.github.com/MiJey/82f68cc4112df1fba1e28e8f91a71b00.js](https://gist.github.com/MiJey/82f68cc4112df1fba1e28e8f91a71b00.js)">
+<script src="https://gist.github.com/MiJey/82f68cc4112df1fba1e28e8f91a71b00.js">
 
 </script>
