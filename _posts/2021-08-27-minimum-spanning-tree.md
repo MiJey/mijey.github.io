@@ -23,11 +23,15 @@ modified: 2021-09-14 21:52:00
 
 **신장 트리(Spanning Tree)**란 그래프의 모든 정점(vertex)을 잇는 트리입니다. 신장(伸長)은 '길게 늘리다' 라는 의미로 그래프 내에서 모든 정점으로 쭉 뻗어나간 트리의 모양을 떠올리면 됩니다. 하나의 그래프에서 여러개의 신장 트리가 존재할 수 있습니다.
 
-![최소 신장 트리(Minimum Spanning Tree, MST)](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Minimum_spanning_tree.svg/300px-Minimum_spanning_tree.svg.png)
+![https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Minimum_spanning_tree.svg/300px-Minimum_spanning_tree.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Minimum_spanning_tree.svg/300px-Minimum_spanning_tree.svg.png)
+
+최소 신장 트리(Minimum Spanning Tree, MST)
 
 신장 트리 중에서 모든 간선(edge)의 가중치(weight)의 합이 가장 작은 신장 트리를 **최소 신장 트리(Minimum Spanning Tree, MST)**라고 합니다. 마찬가지로 하나의 그래프에서 여러개의 최소 신장 트리가 존재할 수 있습니다.
 
-![여러 개 존재할 수 있는 MST](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Multiple_minimum_spanning_trees.svg/220px-Multiple_minimum_spanning_trees.svg.png)
+![https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Multiple_minimum_spanning_trees.svg/220px-Multiple_minimum_spanning_trees.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Multiple_minimum_spanning_trees.svg/220px-Multiple_minimum_spanning_trees.svg.png)
+
+여러 개 존재할 수 있는 MST
 
 
 ### Cut Property
@@ -39,7 +43,9 @@ MST를 찾는 알고리듬을 이해하는데는 MST의 **컷 프로퍼티(cut p
 
 어떤 그래프를 서로소(disjoint)인 두 하위 집합으로 나누는 행위를 **컷(cut)**이라고 합니다. 간단하게 말하면 그래프를 둘로 쪼개는 행위입니다. 그리고 이렇게 나누어진 두 그룹을 이어주는 모든 간선을 **컷 세트(cut-set)**라고 합니다.
 
-![컷 세트(cut-set)](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Min-cut.svg/220px-Min-cut.svg.png)
+![https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Min-cut.svg/220px-Min-cut.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Min-cut.svg/220px-Min-cut.svg.png)
+
+컷 세트(cut-set)
 
 위 그래프에서 빨간색 간선 2개가 컷 세트(cut-set)입니다. 컷 세트에 포함된 모든 간선을 끊어주면(빨간 간선을 모두 끊어주면) 그래프가 둘로 나뉘어 지겠죠. 반대로 컷 세트에 포함된 간선 중 하나만 연결되어도 두 그룹은 이어지게됩니다.
 
@@ -77,14 +83,18 @@ MST를 찾는 알고리듬을 이해하는데는 MST의 **컷 프로퍼티(cut p
 
 **크러스컬 알고리듬(Kruskal’s algorithm)**은 그래프 전체에서 가중치가 가장 작은 간선부터 차례대로 **합치는 방식**이고, **프림 알고리듬(Prim’s algorithm)**은 하나의 노드에서 시작해서 MST에 포함되는 간선으로 **뻗어나가는 방식**입니다.
 
-![크러스컬 알고리듬(Kruskal’s algorithm) 예시](https://upload.wikimedia.org/wikipedia/commons/b/bb/KruskalDemo.gif)
+예시![https://upload.wikimedia.org/wikipedia/commons/b/bb/KruskalDemo.gif](https://upload.wikimedia.org/wikipedia/commons/b/bb/KruskalDemo.gif)
 
-![프림 알고리듬(Prim’s algorithm) 예시](https://upload.wikimedia.org/wikipedia/commons/9/9b/PrimAlgDemo.gif)
+크러스컬 알고리듬(Kruskal’s algorithm) 
+
+예시![https://upload.wikimedia.org/wikipedia/commons/9/9b/PrimAlgDemo.gif](https://upload.wikimedia.org/wikipedia/commons/9/9b/PrimAlgDemo.gif)
+
+프림 알고리듬(Prim’s algorithm) 
 
 
 ## 크러스컬 알고리듬(Kruskal’s algorithm)
 
-크러스컬 알고리듬의 핵심은 그래프를 합쳐나가는 것입니다. 그래프 합치기를 위해서 사용되는 자료구조가 서로소 집합(disjoint-set) 또는 합집합 찾기(union-find)라고 불리는 자료구조입니다.
+크러스컬 알고리듬의 핵심은 그래프를 합쳐나가는 것입니다. 그래프 합치기를 위해서 사용되는 자료구조가 **서로소 집합(disjoint-set)** 또는 **합집합 찾기(union-find)**라고 불리는 자료구조입니다.
 
 
 ### 서로소 집합(disjoint-set), 합집합 찾기(union-find) 자료구조
@@ -95,14 +105,14 @@ MST를 찾는 알고리듬을 이해하는데는 MST의 **컷 프로퍼티(cut p
 
 
 
-1. MakeSet(x)
+1. **MakeSet(x)**
     1. x라는 원소 하나를 가지는 새로운 집합을 생성합니다.
-2. Find(x)
+2. **Find(x)**
     2. 어떤 원소 x가 포함된 집합에서 ‘대표 원소(루트 노드)’를 반환합니다.
-3. Union(x, y)
+3. **Union(x, y)**
     3. x가 포함된 집합과 y가 포함된 집합을 하나의 집합으로 합칩니다.
 
-서로소 집합 자료구조를 이해하기 쉽게 비유하자면, 꼬리잡기 놀이와 비슷합니다. 맨 처음에는 한 명이서 시작해서(MakeSet) 만나면 서로 합쳐집니다(Union). 가장 앞에 있는 사람은 해당 집합의 대표라고 할 수 있죠(Find).
+서로소 집합 자료구조를 이해하기 쉽게 비유하자면, 꼬리잡기 놀이와 비슷합니다. 맨 처음에는 한 명이서 시작해서(MakeSet) 만나면 서로 합쳐집니다(Union). 가장 앞에 있는 사람은 해당 집합의 대표라고 할 수 있죠(Find가 반환하는 루트 노드).
 
 
 ### 서로소 집합을 사용한 크러스컬 알고리듬
@@ -121,7 +131,7 @@ MST를 찾는 알고리듬을 이해하는데는 MST의 **컷 프로퍼티(cut p
 
 ### 크러스컬 알고리듬의 시간 복잡도
 
-크러스컬 알고리듬의 시간 복잡도는** O(E log E)** **= O(E log V)**입니다. 자세한 시간 복잡도는 다음과 같습니다. V는 정점의 개수, E는 간선의 개수 입니다.
+크러스컬 알고리듬의 시간 복잡도는 **O(E log E)** **= O(E log V)**입니다. 자세한 시간 복잡도는 다음과 같습니다. V는 정점의 개수, E는 간선의 개수 입니다.
 
 
 
@@ -154,13 +164,17 @@ MST를 찾는 알고리듬을 이해하는데는 MST의 **컷 프로퍼티(cut p
 
 지금까지 MST를 찾는 알고리듬인 크러스컬 알고리듬과 프림 알고리듬에 대해 알아보았습니다. 그럼 두 알고리듬 모두 시간 복잡도가 같은데, 어떤 알고리듬을 선택하는 것이 좋을까요?
 
-간선이 적은 경우 크러스컬 알고리듬을, 간선이 많은 경우 프림 알고리듬을 선택하는 것이 좋습니다. 크러스컬 알고리듬은 시작 전 모든 간선을 정렬해서 사용하고, 프림 알고리듬은 그때그때 주변 간선들을 찾아서 사용하기 때문이죠. 하지만 구현에 따라 실제로 소요되는 시간은 다를 수 있습니다.
+**간선이 적은 경우 크러스컬 알고리듬**을, **간선이 많은 경우 프림 알고리듬**을 선택하는 것이 좋습니다. 크러스컬 알고리듬은 시작 전 모든 간선을 정렬해서 사용하고, 프림 알고리듬은 그때그때 주변 간선들을 찾아서 사용하기 때문이죠. 하지만 구현에 따라 실제로 소요되는 시간은 다를 수 있습니다.
 
 
 ## 구현 코드(Python)
 
 [백준 1197번: 최소 스패닝 트리](https://www.acmicpc.net/problem/1197)를 크러스컬과 프림으로 구현한 코드입니다. 문제는 MST의 가중치의 합을 구하는 문제라 MST의 모든 간선을 리스트에 추가하는 코드는 주석으로 남겨놓았습니다.
 
-<script src="[https://gist.github.com/MiJey/b524564db3963fba9e38d1c8705bca00.js](https://gist.github.com/MiJey/b524564db3963fba9e38d1c8705bca00.js)"></script>
+<script src="[https://gist.github.com/MiJey/b524564db3963fba9e38d1c8705bca00.js](https://gist.github.com/MiJey/b524564db3963fba9e38d1c8705bca00.js)">
 
-<script src="[https://gist.github.com/MiJey/82f68cc4112df1fba1e28e8f91a71b00.js](https://gist.github.com/MiJey/82f68cc4112df1fba1e28e8f91a71b00.js)"></script>
+</script>
+
+<script src="[https://gist.github.com/MiJey/82f68cc4112df1fba1e28e8f91a71b00.js](https://gist.github.com/MiJey/82f68cc4112df1fba1e28e8f91a71b00.js)">
+
+</script>
