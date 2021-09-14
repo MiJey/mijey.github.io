@@ -21,7 +21,7 @@ modified: 2021-09-14 21:52:00
 
 ## 최소 신장 트리(Minimum Spanning Tree, MST)
 
-**신장 트리(Spanning Tree)**란 그래프의 모든 정점(vertex)을 잇는 트리입니다. 신장(伸長)은 '길게 늘리다' 라는 의미로 그래프 내에서 모든 정점으로 쭉 뻗어나간 트리의 모양을 떠올리면 됩니다. 하나의 그래프에서 여러개의 신장 트리가 존재할 수 있습니다.
+**신장 트리(Spanning Tree)**란 그래프의 모든 정점(vertex)을 잇는 트리입니다. 신장(伸長)은 '길게 늘리다' 라는 의미로 그래프 내에서 모든 정점으로 쭉 뻗어나간 트리의 모양을 떠올리면 됩니다. 하나의 그래프에서 여러 개의 신장 트리가 존재할 수 있습니다.
 
 ![https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Minimum_spanning_tree.svg/300px-Minimum_spanning_tree.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Minimum_spanning_tree.svg/300px-Minimum_spanning_tree.svg.png)
 
@@ -83,13 +83,13 @@ MST를 찾는 알고리듬을 이해하는데는 MST의 **컷 프로퍼티(cut p
 
 **크러스컬 알고리듬(Kruskal’s algorithm)**은 그래프 전체에서 가중치가 가장 작은 간선부터 차례대로 **합치는 방식**이고, **프림 알고리듬(Prim’s algorithm)**은 하나의 노드에서 시작해서 MST에 포함되는 간선으로 **뻗어나가는 방식**입니다.
 
-예시![https://upload.wikimedia.org/wikipedia/commons/b/bb/KruskalDemo.gif](https://upload.wikimedia.org/wikipedia/commons/b/bb/KruskalDemo.gif)
+![https://upload.wikimedia.org/wikipedia/commons/b/bb/KruskalDemo.gif](https://upload.wikimedia.org/wikipedia/commons/b/bb/KruskalDemo.gif)
 
-크러스컬 알고리듬(Kruskal’s algorithm) 
+크러스컬 알고리듬(Kruskal’s algorithm) 예시
 
-예시![https://upload.wikimedia.org/wikipedia/commons/9/9b/PrimAlgDemo.gif](https://upload.wikimedia.org/wikipedia/commons/9/9b/PrimAlgDemo.gif)
+![https://upload.wikimedia.org/wikipedia/commons/9/9b/PrimAlgDemo.gif](https://upload.wikimedia.org/wikipedia/commons/9/9b/PrimAlgDemo.gif)
 
-프림 알고리듬(Prim’s algorithm) 
+프림 알고리듬(Prim’s algorithm) 예시
 
 
 ## 크러스컬 알고리듬(Kruskal’s algorithm)
