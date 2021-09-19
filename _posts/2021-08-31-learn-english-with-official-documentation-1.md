@@ -2,7 +2,7 @@
 
 layout: post
 
-title: 안드로이드 공식 문서로 영어공부 (1)
+title: 안드로이드 공식 문서로 영어공부 (1) App Bacis
 
 series: “공식 문서로 영어공부”
 
