@@ -21,7 +21,7 @@ modified: 2021-09-27 16:43:00
 ---
 
 
-## [App Basics](2021-09-19-learn-english-with-official-documentation-1.md)
+## [App Basics]({% post_url 2021-09-19-learn-english-with-official-documentation-1 %})
 
 - [x] Introduction
 
@@ -51,13 +51,13 @@ modified: 2021-09-27 16:43:00
 - [ ] Chrome OS devices
 
 
-## [App architecture](2021-09-25-learn-english-with-official-documentation-2.md)
+## [App architecture]({% post_url 2021-09-25-learn-english-with-official-documentation-2 %})
 
 - [x] Introduction
 
 - [x] Guide to app architecture
 
-- [ ] [Architecture Components](2021-09-25-learn-english-with-official-documentation-3.md)
+- [ ] [Architecture Components](({% post_url 2021-09-25-learn-english-with-official-documentation-3 %})
 
   - [ ] UI layer libraries
 
