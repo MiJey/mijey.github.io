@@ -2,7 +2,7 @@
 
 layout: post
 
-title: 안드로이드 공식 문서로 영어공부 (0) Overview
+title: 안드로이드 공식 문서로 영어공부 (0) Contents
 
 series: “공식 문서로 영어공부”
 
@@ -16,7 +16,7 @@ draft: 2021-09-27 14:53:00
 
 date: 2021-09-27 16:43:00
 
-modified: 2021-09-27 16:43:00
+modified: 2021-09-28 00:14:00
 
 ---
 
@@ -65,7 +65,7 @@ modified: 2021-09-27 16:43:00
 
     - [x] Data binding library
 
-    - [ ] Lifecycle-aware components
+    - [x] [Lifecycle-aware components]({% post_url 2021-09-28-learn-english-with-official-documentation-4 %})
 
     - [ ] Paging Library
 
