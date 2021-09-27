@@ -57,7 +57,7 @@ modified: 2021-09-27 16:43:00
 
 - [x] Guide to app architecture
 
-- [ ] [Architecture Components](({% post_url 2021-09-25-learn-english-with-official-documentation-3 %})
+- [ ] [Architecture Components]({% post_url 2021-09-25-learn-english-with-official-documentation-3 %})
 
   - [ ] UI layer libraries
 
