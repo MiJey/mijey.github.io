@@ -182,7 +182,12 @@ Koin에서 Hilt의 특징과 장단점을 비교하여 설명해주시고, 실�
     * 특징
         * Dagger를 래핑한 DI 라이브러리
         * Dagger에서 관계 스코프 설정을 위한 러닝커브가 높았던 문제를 해결
-        * Service Locator vs Dependency Injection
+        * 장점
+            * 보일러 플레이트 코드가 줄어듬
+            * 설정이 간편
+            * 테스트하기 좋음
+            * Dependency cycle 없음
+* Service Locator vs Dependency Injection
 
 <table>
   <tr>
@@ -231,12 +236,7 @@ Hilt(Dependency Injection)
 
 
 
-        * 장점
-            * 보일러 플레이트 코드가 줄어듬
-            * 설정이 간편
-            * 테스트하기 좋음
-            * Dependency cycle 없음
-        * Koin vs Dagger2 vs Hilt
+* Koin vs Dagger2 vs Hilt
 
 <table>
   <tr>
