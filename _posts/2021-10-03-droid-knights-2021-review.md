@@ -6,7 +6,7 @@ title: Droid Knights 2021 리뷰
 
 categories: [Android]
 
-tags: [Android, DroidKnights2021]
+tags: [Android, DroidKnights]
 
 filename: 2021-10-03-droid-knights-2021-review.md
 
